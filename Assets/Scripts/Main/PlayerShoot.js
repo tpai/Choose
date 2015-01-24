@@ -1,8 +1,24 @@
 ﻿#pragma strict
 
+import SimpleJSON;
+import UnityEngine.UI;
+
 var isRead : boolean = false;
 var isReading : boolean = false;
 var paper : Transform;
+
+var stories : JSONArray;
+var json : JSONNode;
+var data : TextAsset;
+var index : int;
+
+function Start () {
+	data = Resources.Load.<TextAsset>("Stories");
+	json = JSON.Parse(data.text);
+	stories = json["Stories"].AsArray;
+	index = PlayerPrefs.GetInt("NowStageIndex");
+	Debug.Log(index);
+}
 
 function Update () {
 	if (Input.GetKeyDown (KeyCode.E)) {
@@ -10,13 +26,16 @@ function Update () {
 		var hit : RaycastHit;
 		
 		if(Physics.Raycast(transform.position, transform.forward, hit, 3f)){
-			if(hit.transform.tag == "Paper") {
+			
+			var targetTag : String = hit.transform.tag;
+			
+			if(targetTag == "Paper") {
 				isRead = true;
 				paper = hit.transform;
 				ShowPaperUI(!isReading);
 			}
-			else if(hit.transform.tag == "LDoor" || hit.transform.tag == "RDoor") {
-				switch(hit.transform.tag) {
+			else if(targetTag == "LDoor" || targetTag == "RDoor") {
+				switch(targetTag) {
 					case "LDoor":
 						PlayerPrefs.SetInt("Door", 1);
 						break;
@@ -24,9 +43,16 @@ function Update () {
 						PlayerPrefs.SetInt("Door", 2);
 						break;
 				}
-				PlayerPrefs.SetInt("HowManyYouRead", ++PlayerPrefs.GetInt("HowManyYouRead"));
+				// if player not read the hint
+				if(!isRead) {
+					PlayerPrefs.SetInt("HowManyYouNotRead", PlayerPrefs.GetInt("HowManyYouNotRead")+1);
+				}
+				// add choice msg to result
+				PlayerPrefs.SetString("Result", PlayerPrefs.GetString("Result")+stories[index][targetTag]);
+				// next question
 				PlayerPrefs.SetInt("NowStageIndex", PlayerPrefs.GetInt("NowStageIndex")+1);
-				Application.LoadLevel(2);
+				
+				Application.LoadLevel(1);
 			}
 			else {
 				ShowPaperUI(false);
@@ -34,7 +60,6 @@ function Update () {
 		}
 		else {
 //			Debug.Log ("No Shoot!");
-			
 			ShowPaperUI(false);
 		}
 	}

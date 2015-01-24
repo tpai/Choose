@@ -1,14 +1,16 @@
 {
 	"Stories": [
 		{
-			"Content": "Hey, don't be panic and deep breath, you're safe by now, but from now, you need to make a lot of choices to move on, so... good luck and follow your heart to open the door.\n\nOk, first! You have to open the 'left' side door, then it's on your own.",
-			"ResultL": "You accept the suggestion from stranger.",
-			"ResultR": "You reject the suggestion from stranger."
+			"Content": "Hey, don't be panic and get a deep breath, you're safe by now, but from now you need to make a lot of choices to move on , so... good luck and follow your heart to open the door.\n\nIf you ready for this, open the 'left' side door. Go on, don't be shy.",
+			"Title": "Stranger: Hey, open the 'left' side door.",
+			"LDoor": "Alright, as your wish, stranger.",
+			"RDoor": "No one can ask me do anything."
 		},
 		{
-			"Content": "",
-			"ResultL": "",
-			"ResultR": ""
+			"Content": "Good job! It seems you've made your first choice, that make things go easy though. Well, there's only one thing you have to know, the 'left' side door means 'yes', the 'right' side door means 'no'. Ah, I'm pretty sure you can get it, right?",
+			"Title": "Left means yes, right means no, get it?",
+			"LDoor": "Don't care, but I got it.",
+			"RDoor": "I don't care what the god damn door means really."
 		}
 	]
 }

@@ -4,8 +4,6 @@ import SimpleJSON;
 import UnityEngine.UI;
 
 function Start () {
-	PlayerPrefs.SetInt("NowStageIndex", 0);
-
 	var data : TextAsset = Resources.Load.<TextAsset>("Stories");
 	var json : JSONNode = JSON.Parse(data.text);
 	var stories : JSONArray = json["Stories"].AsArray;
