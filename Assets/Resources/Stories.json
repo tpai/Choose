@@ -1,0 +1,14 @@
+{
+	"Stories": [
+		{
+			"Content": "Hey, don't be panic and deep breath, you're safe by now, but from now, you need to make a lot of choices to move on, so... good luck and follow your heart to open the door.\n\nOk, first! You have to open the 'left' side door, then it's on your own.",
+			"ResultL": "You accept the suggestion from stranger.",
+			"ResultR": "You reject the suggestion from stranger."
+		},
+		{
+			"Content": "",
+			"ResultL": "",
+			"ResultR": ""
+		}
+	]
+}
