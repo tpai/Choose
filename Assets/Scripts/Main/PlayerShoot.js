@@ -43,16 +43,15 @@ function Update () {
 						PlayerPrefs.SetInt("Door", 2);
 						break;
 				}
-				// if player not read the hint
-				if(!isRead) {
-					PlayerPrefs.SetInt("HowManyYouNotRead", PlayerPrefs.GetInt("HowManyYouNotRead")+1);
-				}
-				// add choice msg to result
-				PlayerPrefs.SetString("Result", PlayerPrefs.GetString("Result")+stories[index][targetTag]);
 				// next question
 				PlayerPrefs.SetInt("NowStageIndex", PlayerPrefs.GetInt("NowStageIndex")+1);
-				
-				Application.LoadLevel(1);
+				// go to scene
+				if(index == stories.Count)
+					Application.LoadLevel(4);
+				if(targetTag == stories[index]["Answer"])
+					Application.LoadLevel(2);
+				else
+					Application.LoadLevel(3);
 			}
 			else {
 				ShowPaperUI(false);

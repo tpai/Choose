@@ -1,16 +1,44 @@
 {
 	"Stories": [
 		{
-			"Content": "Hey, don't be panic and get a deep breath, you're safe by now, but from now you need to make a lot of choices to move on , so... good luck and follow your heart to open the door.\n\nIf you ready for this, open the 'left' side door. Go on, don't be shy.",
-			"Title": "Stranger: Hey, open the 'left' side door.",
-			"LDoor": "Alright, as your wish, stranger.",
-			"RDoor": "No one can ask me do anything."
+			"Content": "Hey, don't be panic and get a deep breath, you're safe... for now. From now you're in a endless nightmare, you need to make a lot of choices to move on, then you could possibly get away from this, so... good luck, hope you can stay till the end. If you're ready for this, open the left door.",
+			"Answer": "LDoor"
 		},
 		{
-			"Content": "Good job! It seems you've made your first choice, that make things go easy though. Well, there's only one thing you have to know, the 'left' side door means 'yes', the 'right' side door means 'no'. Ah, I'm pretty sure you can get it, right?",
-			"Title": "Left means yes, right means no, get it?",
-			"LDoor": "Don't care, but I got it.",
-			"RDoor": "I don't care what the god damn door means really."
+			"Content": "This time, do NOT go left.",
+			"Answer": "RDoor"
+		},
+		{
+			"Content": "You don't know me, don't you?",
+			"Answer": "LDoor"
+		},
+		{
+			"Content": "Yeah, so now I want to tell you a story about me. My name is Robert, I have two daughters, I kill them all in the sunday afternoon. Do you think I'm crazy?",
+			"Answer": "RDoor"
+		},
+		{
+			"Content": "I'm not crazy, but I actually did that. Forgive me, Lisa. I didn't mean that. Just... there's a number around my head, is that number even or odd?\n\nL: Even/R: Odd",
+			"Answer": "RDoor"
+		},
+		{
+			"Content": "Ah... it's odd. And I know it mean something, but it's too late to figure it out. I dead, becuz I hang myself in the...?\n\nL: Garage/R: Fridge",
+			"Answer": "LDoor"
+		},
+		{
+			"Content": "Oh, yes... sure. It's bored, right? Garage? There's many good place to die than garage, but I did hang myself there with a garden hose. How silly!",
+			"Answer": "LDoor"
+		},
+		{
+			"Content": "I was a terrible dad to my daughter, she always hates me. But guess what? She is dead, so no one hates no one. THE END! Nice story, huh?",
+			"Answer": "RDoor"
+		},
+		{
+			"Content": "Yeah... it's not. Well, good for you to stay till now. Maybe you've met my wife Lisa before, so ready for the next adventure with my daughter?",
+			"Answer": "RDoor"
+		},
+		{
+			"Content": "Nah, just kidding. She still needs a while to come back from hell, so good luck and see you soon. Walk through the left door, then you'll awake.",
+			"Answer": "RDoor"
 		}
 	]
 }

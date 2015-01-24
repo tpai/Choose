@@ -7,7 +7,10 @@ function Start () {
 	var data : TextAsset = Resources.Load.<TextAsset>("Stories");
 	var json : JSONNode = JSON.Parse(data.text);
 	var stories : JSONArray = json["Stories"].AsArray;
-
-	var index : int = PlayerPrefs.GetInt("NowStageIndex");
-	GetComponent(Text).text = stories[index]["Content"];
+	
+	for(var i=0;i<stories.Count;i++) {
+		PlayerPrefs.SetString("Result", PlayerPrefs.GetString("Result")+PlayerPrefs.GetString("Q"+i));
+	}
+	
+	GetComponent(Text).text = PlayerPrefs.GetString("Result");
 }
