@@ -1,5 +1,5 @@
 ﻿#pragma strict
 
-function LoadLevel (lv : int) {
-	Application.LoadLevel(lv);
+function LoadLevel () {
+	Application.LoadLevel(PlayerPrefs.GetInt("NextLevel"));
 }

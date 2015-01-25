@@ -1,0 +1,40 @@
+{
+	"Stories": [
+		{
+			"Content": "Hey, don't be panic and get a deep breath, you're safe... for now. From now you're in a endless nightmare, you need to make a lot of choices to move on, then you could possibly get away from this, so... good luck, hope you can stay till the end. If you're ready for this, open the left door.",
+			"Answer": "LDoor"
+		},
+		{
+			"Content": "Well, You don't know me, don't you?\n\nL: Yes/R: No",
+			"Answer": "LDoor"
+		},
+		{
+			"Content": "Yeah, so now I want to tell you a story about me. My name is Robert, I have two daughters and a wife, one day in the lovely sunday afternoon, I kill them all.\n\nYou think I'm crazy?\n\nL: Yes/R: No",
+			"Answer": "RDoor"
+		},
+		{
+			"Content": "Yes, I'm not crazy, but I actually did that.\n\nJust... there was a number messed up with my head, 204xxx... is the number even or odd?\n\nL: Even/R: Odd",
+			"Answer": "RDoor"
+		},
+		{
+			"Content": "Ah... it's odd. I know it mean something, but it's too late to figure it out before I dead. I hang myself in the...?\n\nL: Garage/R: Fridge",
+			"Answer": "LDoor"
+		},
+		{
+			"Content": "Oh, yes... sure. It's bored, right? Garage? There's many good place to die than garage, but I did hang myself there with a garden hose.\n\nL: Yes/R: No",
+			"Answer": "LDoor"
+		},
+		{
+			"Content": "I'm a terrible dad to my daughter, she always hates me. But guess what? She is dead, so no one hates no one.\n\nTHE END. \n\nHmm... nice story, huh?",
+			"Answer": "RDoor"
+		},
+		{
+			"Content": "Yeah... it's not. Well, good for you to reach here. So ready for the next adventure with my daughter?\n\nL: Yes/R: No",
+			"Answer": "RDoor"
+		},
+		{
+			"Content": "Nah, just kidding. She still needs a while to come back from hell. Oh wait, I think maybe you've met my wife Lisa before...\n\nNever mind, just leave.",
+			"Answer": "BDoor"
+		}
+	]
+}

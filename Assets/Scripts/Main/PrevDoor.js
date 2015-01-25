@@ -4,7 +4,10 @@ var doorId : int;
 var door : GameObject [];
 
 function Start () {
-	doorId = PlayerPrefs.GetInt("Door");
+	if(PlayerPrefs.GetInt("ExitDoor") != -1)
+		doorId = PlayerPrefs.GetInt("ExitDoor");
+	else
+		doorId = PlayerPrefs.GetInt("Door");
 	
 	if(doorId != 0) {
 		var obj : GameObject = Instantiate(door[doorId-1]);

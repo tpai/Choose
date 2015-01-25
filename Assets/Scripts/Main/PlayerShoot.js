@@ -34,7 +34,7 @@ function Update () {
 				paper = hit.transform;
 				ShowPaperUI(!isReading);
 			}
-			else if(targetTag == "LDoor" || targetTag == "RDoor") {
+			else if(targetTag == "LDoor" || targetTag == "RDoor" || targetTag == "BDoor") {
 				switch(targetTag) {
 					case "LDoor":
 						PlayerPrefs.SetInt("Door", 1);
@@ -42,16 +42,34 @@ function Update () {
 					case "RDoor":
 						PlayerPrefs.SetInt("Door", 2);
 						break;
+					case "BDoor":
+						PlayerPrefs.SetInt("Door", Random.Range(1, 2));
+						break;
 				}
-				// next question
-				PlayerPrefs.SetInt("NowStageIndex", PlayerPrefs.GetInt("NowStageIndex")+1);
+				
+				if(index == stories.Count - 2)
+					PlayerPrefs.SetInt("ExitDoor", 3);
+				
+				Debug.Log(targetTag+"/"+stories[index]["Answer"]);
+				
 				// go to scene
-				if(index == stories.Count)
-					Application.LoadLevel(4);
-				if(targetTag == stories[index]["Answer"])
-					Application.LoadLevel(2);
-				else
-					Application.LoadLevel(3);
+				if(index == stories.Count - 1) {
+					if(targetTag == stories[index]["Answer"])
+						PlayerPrefs.SetInt("NextLevel", 4);
+					else
+						PlayerPrefs.SetInt("NextLevel", 3);
+				}
+				else if(targetTag == stories[index]["Answer"]) {
+					Debug.Log("correct");
+					// next question
+					PlayerPrefs.SetInt("NowStageIndex", PlayerPrefs.GetInt("NowStageIndex")+1);
+					PlayerPrefs.SetInt("NextLevel", 1);
+				}
+				else {
+					Debug.Log("wrong");
+					PlayerPrefs.SetInt("NextLevel", 3);
+				}
+				Application.LoadLevel(2);
 			}
 			else {
 				ShowPaperUI(false);
