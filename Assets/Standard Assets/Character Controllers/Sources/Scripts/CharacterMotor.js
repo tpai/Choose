@@ -245,11 +245,11 @@ private function UpdateFunction () {
 	movement.velocity = (tr.position - lastPosition) / Time.deltaTime;
 	var newHVelocity : Vector3 = new Vector3(movement.velocity.x, 0, movement.velocity.z);
 	
-	if(newHVelocity != Vector3.zero && !audio.isPlaying) {
-		audio.Play();
+	if(newHVelocity != Vector3.zero && !GetComponent.<AudioSource>().isPlaying) {
+		GetComponent.<AudioSource>().Play();
 	}
-	else if(newHVelocity == Vector3.zero && audio.isPlaying) {
-		audio.Stop();
+	else if(newHVelocity == Vector3.zero && GetComponent.<AudioSource>().isPlaying) {
+		GetComponent.<AudioSource>().Stop();
 	}
 	
 	// The CharacterController can be moved in unwanted directions when colliding with things.

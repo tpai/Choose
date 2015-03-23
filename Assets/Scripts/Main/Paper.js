@@ -11,7 +11,7 @@ function ShowPaperUI (show : boolean) {
 	// sfx
 	if(isReading && !show || show) {
 		isReading = false;
-		audio.Play();
+		GetComponent.<AudioSource>().Play();
 	}
 	
 	if(show) {
