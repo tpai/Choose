@@ -1,40 +1,40 @@
 {
-	"Stories": [
+	"stories": [
 		{
-			"Content": "Hey, don't be panic and get a deep breath, you're safe... for now. Let me get this straight, you're in a endless nightmare, you have to make a lot of choices to move on, then you can get away from this, so... good luck. If you're ready for this, open the left door.",
-			"Answer": "LDoor"
+			"content": "Hey, don't be panic and get a deep breath, you're safe... for now. Let me get this straight, you're in a endless nightmare, you have to make a lot of choices to move on, then you can get away from this, so... good luck. If you're ready for this, open the left door.",
+			"answer": "LDoor"
 		},
 		{
-			"Content": "Well, You don't know me, don't you?\n\nL: Yes/R: No",
-			"Answer": "LDoor"
+			"content": "Well, You don't know me, don't you?\n\nL: Yes/R: No",
+			"answer": "LDoor"
 		},
 		{
-			"Content": "Alright, my name is Robert, I have two daughters and a wife, one day in the lovely sunday afternoon, I killed them.\n\nDo you think I am crazy?\n\nL: Yes/R: No",
-			"Answer": "RDoor"
+			"content": "Alright, my name is Robert, I have two daughters and a wife, one day in the lovely sunday afternoon, I killed them.\n\nDo you think I am crazy?\n\nL: Yes/R: No",
+			"answer": "RDoor"
 		},
 		{
-			"Content": "Yes, I'm not crazy.\n\nIt's a number, it messed up my head, 204xxx... is this number even or odd?\n\nL: Even/R: Odd",
-			"Answer": "RDoor"
+			"content": "Yes, I'm not crazy.\n\nIt's a number, it messed up my head, 204xxx... is this number even or odd?\n\nL: Even/R: Odd",
+			"answer": "RDoor"
 		},
 		{
-			"Content": "Ah... it's odd. I knew it mean something, but it's too late to figure it out before I dead. I hung myself in the...?\n\nL: Garage/R: Fridge",
-			"Answer": "LDoor"
+			"content": "Ah... it's odd. I knew it mean something, but it's too late to figure it out before I dead. I hung myself in the...?\n\nL: Garage/R: Fridge",
+			"answer": "LDoor"
 		},
 		{
-			"Content": "Oh, yes, it's bored, right? Garage? There are plenty of place to die than garage, but I do hung myself up with a garden hose.\n\nL: Okay/R: Hmm",
-			"Answer": "LDoor"
+			"content": "Oh, yes, it's bored, right? Garage? There are plenty of place to die than garage, but I do hung myself up with a garden hose.\n\nL: Okay/R: Hmm",
+			"answer": "LDoor"
 		},
 		{
-			"Content": "I was a terrible dad, my daughter hates me. But guess what? She died, so no one hates no one.\n\nTHE END. \n\nHmm... nice story, huh?\n\nL: Yes/R: No",
-			"Answer": "RDoor"
+			"content": "I was a terrible dad, my daughter hates me. But guess what? She died, so no one hates no one.\n\nTHE END. \n\nHmm... nice story, huh?\n\nL: Yes/R: No",
+			"answer": "RDoor"
 		},
 		{
-			"Content": "Yeah... it's not. Well, good for you to reach here. So ready for a new adventure with my daughter?\n\nL: Of course/R: Seriously?",
-			"Answer": "RDoor"
+			"content": "Yeah... it's not. Well, good for you to reach here. So ready for a new adventure with my daughter?\n\nL: Of course/R: Seriously?",
+			"answer": "RDoor"
 		},
 		{
-			"Content": "Nah, just kidding. She still needs a while to come back from hell. Oh wait, I think maybe you've met my wife Lisa many times...\n\nNever mind, just leave.",
-			"Answer": "BDoor"
+			"content": "Nah, just kidding. She still needs a while to come back from hell. Oh wait, I think maybe you've met my wife Lisa many times...\n\nNever mind, just leave.",
+			"answer": "BDoor"
 		}
 	]
 }
